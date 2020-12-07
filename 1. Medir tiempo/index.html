@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medir el tiempo por pregunta</title>
+    <link rel=StyleSheet href="principal.css" type="text/css">
+    
+</head>
+<body>
+    <script src="./main.js"></script>
+
+    <div>
+        <h1 class= "title" style = "font-style: oblique; margin-top: 50px;">Controlar el tiempo en las pruebass</h1>
+
+        <div style="padding-bottom: 2.5%;">
+            <form class="form"style="margin-top: 50px;"> 
+                <h2 style="font-size: larger; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-bottom: 10%;">TIEMPO</h2>
+                <label for="horas"> HORAS</label>
+                <label for="minutos" style="margin-left: 200px;">MINUTOS</label><br>
+
+                <input type="number" id="horas" name ="horas" min="0" max="4" value="0" >
+                <input type="number" id="minutos" name ="minutos" min="0" max="59" style="margin-left: 50px;" value="0"><br><br>
+
+                <h2 style="font-size: larger; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 50px;">PREGUNTAS </h2>
+                <input type="number" id="preguntas" name="preguntas" min="1" max = "250" value="0"><br> 
+            </form>
+
+        </div>
+
+
+        <div style="margin-top: 400px;">
+            <button class="btn" type="button" onclick="getData()" style="margin-left: 0px;">Medir tiempo</button>
+            <button class= "btn"type = "button" onclick="restartData()" style="margin-left: 50px;">Borrar datos</button>
+            <button class= "btn" type="button" style="margin-left: 50px;">Iniciar cronometro</button>
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>
